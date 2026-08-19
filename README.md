@@ -2,15 +2,14 @@
 
 ## Project Overview
 
-This project analyzes e-commerce sales data using **Python, SQL, NumPy, Pandas, and Matplotlib**.
+This project is an **E-Commerce Sales Data Analysis** project developed using **Python, NumPy, Pandas, Matplotlib, and MySQL**.
 
-The project connects Python with a MySQL database, loads and cleans sales data, performs exploratory data analysis, calculates business KPIs, analyzes customers, products, orders and payments, and presents important insights through visualizations.
+The project connects Python with a MySQL database, loads and cleans sales data, performs exploratory data analysis, calculates business KPIs, analyzes customers, products, orders and payments, and generates useful business insights through data analysis and visualizations.
 
 ## Technologies Used
 
 * Python
 * MySQL
-* SQL
 * NumPy
 * Pandas
 * Matplotlib
@@ -21,6 +20,7 @@ The project connects Python with a MySQL database, loads and cleans sales data, 
 ## Project Features
 
 * MySQL database connectivity
+* SQL database and queries
 * Data loading from MySQL
 * Data cleaning and preprocessing
 * Exploratory Data Analysis (EDA)
@@ -40,7 +40,7 @@ The project connects Python with a MySQL database, loads and cleans sales data, 
 
 ## Database Tables
 
-The project uses the following main tables:
+The project uses the following main MySQL tables:
 
 * Customers
 * Products
@@ -65,10 +65,10 @@ The project analyzes:
 * Return Rate
 * Top State
 * Top Customer
-* Customer spending
-* Product performance
-* Order status
-* Payment methods
+* Customer Spending
+* Product Performance
+* Order Status
+* Payment Methods
 
 ## Project Structure
 
@@ -89,6 +89,11 @@ E-Commerce-Sales-Data-Analysis/
 ├── visualization.py
 ├── business_insights.py
 │
+├── SQL/
+│   ├── database_creation.sql
+│   ├── table_creation.sql
+│   └── queries.sql
+│
 └── README.md
 ```
 
@@ -97,7 +102,7 @@ E-Commerce-Sales-Data-Analysis/
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone <https://github.com/Sakshi160244/E-Commerce-Sales-Data-Analysis.git>
 ```
 
 ### 2. Install Required Libraries
@@ -108,13 +113,17 @@ pip install pandas numpy matplotlib mysql-connector-python
 
 ### 3. Start MySQL
 
-Start MySQL using XAMPP or another MySQL server.
+Start **MySQL** using XAMPP or another MySQL server.
 
-### 4. Configure Database
+### 4. Create the Database
+
+Run the SQL files provided in the `SQL` folder to create the database, tables, and required queries.
+
+### 5. Configure Database Connection
 
 Update the MySQL connection details in `database.py`.
 
-### 5. Run the Project
+### 6. Run the Project
 
 ```bash
 python main.py
@@ -123,34 +132,38 @@ python main.py
 ## Project Workflow
 
 ```text
-MySQL Database
-       ↓
+SQL Database
+     ↓
+MySQL
+     ↓
+Python Database Connection
+     ↓
 Data Loading
-       ↓
+     ↓
 Data Cleaning
-       ↓
+     ↓
 EDA
-       ↓
+     ↓
 NumPy Analysis
-       ↓
+     ↓
 Customer Analysis
-       ↓
+     ↓
 Product Analysis
-       ↓
+     ↓
 Order Analysis
-       ↓
+     ↓
 Payment Analysis
-       ↓
+     ↓
 KPI Analysis
-       ↓
+     ↓
 Visualization
-       ↓
+     ↓
 Business Insights
 ```
 
 ## Objective
 
-The main objective of this project is to understand e-commerce sales performance and extract meaningful business insights from customer, product, order, and payment data using Python and SQL.
+The main objective of this project is to analyze e-commerce sales data and extract meaningful business insights from customer, product, order, and payment data using **SQL and Python-based data analysis techniques**.
 
 ## Future Improvements
 
